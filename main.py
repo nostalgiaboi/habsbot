@@ -29,7 +29,7 @@ from discord.ext import commands
 #        Passel so that all pinned messages get sent to the pins archive channel.
 
 # TODO change command here if you want to use another command, replace p. with anything you want inside the single ('') quotes
-client = commands.Bot(command_prefix='p.',
+client = commands.Bot(command_prefix='hb=',
                       status='Online', case_insensitive=True)
 client.remove_command("help")
 
@@ -43,15 +43,16 @@ sendall = 0
 
 # TODO 
 # replace the 0 with the pins channel ID for your sever
-pins_channel = 0
+pins_channel = 971628428958765076
 
 # TODO
 # add any black listed channel IDs as a list separated by a comma (,)
 # a good idea is to add admin channels to this
-blacklisted_channels = []
-
-# discord embed colors
-EMBED_COLORS = [
+blacklisted_channels = [939383199442817094,952394194205425705,950904326069555210,939869836379578369,960362873136234557,939585125669290044,949702055193354250,963088145438613554,945683042305994833,940846645359288340,968419487554617394,998785410266304646,942288282102947850,947749728806912021,977081120258682960,959254852813344798,949353342985994340,950594091987636254,950596863717945374,975857797155663892,966201552152985640,951254624973758524,960752815041560617,962354945938583663,966218485501935647,990679849590980708,944098045413453854]
+                        
+                        
+                        
+                        EMBED_COLORS = [
     discord.Colour.magenta(),
     discord.Colour.blurple(),
     discord.Colour.dark_teal(),
@@ -209,7 +210,8 @@ async def on_guild_channel_pins_update(channel, last_pin):
 
 
 # TODO Replace TOKEN with the token from discord developer portal 
-client.run('TOKEN')
+client.run('MTAwNzQ1MDQzMTg3OTkyNTc4MA.GdRZRy.WRPyLJG8cMfkJQbSbNfNFPgKsmerH6ZGLEA6MU
+')
 
 # TODO If using GitHub diff deployment on HeroKu comment out the above line with '#' and remove '#' from the line below to uncomment it. 
 #client.run(os.environ.get('TOKEN'))
